@@ -1,0 +1,11 @@
+/Users/jtorres/Documents/wo/casadocodigo/src/main/java/br/com/casadocodigo/loja/validation/ProdutoValidation.java
+/Users/jtorres/Documents/wo/casadocodigo/src/main/java/br/com/casadocodigo/loja/daos/ProdutoDAO.java
+/Users/jtorres/Documents/wo/casadocodigo/src/main/java/br/com/casadocodigo/loja/conf/JPAConfiguration.java
+/Users/jtorres/Documents/wo/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/Preco.java
+/Users/jtorres/Documents/wo/casadocodigo/src/main/java/br/com/casadocodigo/loja/infra/FileSaver.java
+/Users/jtorres/Documents/wo/casadocodigo/src/main/java/br/com/casadocodigo/loja/controllers/ProdutosController.java
+/Users/jtorres/Documents/wo/casadocodigo/src/main/java/br/com/casadocodigo/loja/conf/AppWebConfiguration.java
+/Users/jtorres/Documents/wo/casadocodigo/src/main/java/br/com/casadocodigo/loja/controllers/HomeController.java
+/Users/jtorres/Documents/wo/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/Produto.java
+/Users/jtorres/Documents/wo/casadocodigo/src/main/java/br/com/casadocodigo/loja/conf/ServletSpringMVC.java
+/Users/jtorres/Documents/wo/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/TipoPreco.java
