@@ -18,7 +18,7 @@ public class UsuarioDAO implements UserDetailsService{
 	private EntityManager manager;
 
 	public Usuario loadUserByUsername(String email) {
-		List<Usuario> usuarios = manager.createQuery("select u form Usuario u where u.email = :email", Usuario.class)
+		List<Usuario> usuarios = manager.createQuery("select u from Usuario u where u.email = :email", Usuario.class)
 				.setParameter("email", email)
 				.getResultList();
 		

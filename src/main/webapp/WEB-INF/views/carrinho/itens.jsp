@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
 <!DOCTYPE html>
 <html>
@@ -85,9 +86,10 @@
 						name="quantidade" value="${carrinhoCompras.getQuantidade(item) }" /></td>
 					<td class="numeric-cell">${carrinhoCompras.getTotal(item) }</td>
 					<td class="remove-item">
-						<form action="${s:mvcUrl('CCC#remover').arg(0, item.produto.id).arg(1, item.tipoPreco).build() }"  method="post">
+						<form:form action="${s:mvcUrl('CCC#remover').arg(0, item.produto.id).arg(1, item.tipoPreco).build() }"  method="post">
 							<input type="image" src="${contextPath }resources/imagens/excluir.png" alt="Excluir" title="Excluir" />
-						</form></td>
+						</form:form>
+					</td>
 				</tr>
 			</c:forEach>
 			</tbody>
@@ -164,8 +166,7 @@
 						<ul>
 							<li><input type="hidden" name="pageNumber" value="0" />
 								<input type="hidden" name="backupCache" value="" />
-								<input type="email"	name="entry.0.single" value="" class="ss-q-short" id="entry_0" 
-								placeholder="seu@email.com" /></li>
+								<input type="email"	name="entry.0.single" value="" class="ss-q-short" id="entry_0" placeholder="seu@email.com" /></li>
 							<li><input type="submit" name="submit" value="Quero Receber!" id="submit-newsletter" /></li>
 						</ul>
 					</form>
