@@ -10,7 +10,6 @@
 		<h1>Lista de Produtos</h1>
 		
 		<div>${sucesso}</div>
-		<div>${message}</div>
 	
 		<table class="table table-bordered table-striped table-hover">
 			<tr>

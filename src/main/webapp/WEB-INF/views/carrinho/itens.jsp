@@ -14,6 +14,8 @@
 		<section class="container middle">
 			<h2 id="cart-title">Seu carrinho de compras</h2>
 	
+			<div>${message}</div>
+	
 			<table id="cart-table">
 				<colgroup>
 					<col class="item-col" />
@@ -44,9 +46,10 @@
 							name="quantidade" value="${carrinhoCompras.getQuantidade(item) }" /></td>
 						<td class="numeric-cell">${carrinhoCompras.getTotal(item) }</td>
 						<td class="remove-item">
-							<form:form action="${s:mvcUrl('CCC#remover').arg(0, item.produto.id).arg(1, item.tipoPreco).build() }"  method="post">
+							<form action="carrinho/remover/${item.produto.id}/${item.tipoPreco}" method="post">
 								<input type="image" src="${contextPath }resources/imagens/excluir.png" alt="Excluir" title="Excluir" />
-							</form:form>
+								<input type="hidden" name="${_csrf.parameterName }" value="${_csrf.token }">
+							</form>
 						</td>
 					</tr>
 				</c:forEach>
@@ -54,7 +57,7 @@
 				<tfoot>
 					<tr>
 						<td colspan="4">
-							<form:form action="${s:mvcUrl('PC#finalizar').build() }" method="post">
+							<form:form servletRelativeAction="pagamento/finalizar" method="post">
 								<input type="submit" class="checkout" name="checkout" value="Finalizar compra" />
 							</form:form>
 						</td>

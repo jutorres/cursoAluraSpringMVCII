@@ -1,21 +1,18 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
 
-
 	<header id="layout-header">
 		<div class="clearfix container">
-			<a href="${s:mvcUrl('HC#index').build()}" id="logo"> </a>
+			<a href="/casadocodigo" id="logo"> </a>
 			<div id="header-content">
 				<nav id="main-nav">
 					<ul class="clearfix">
 						<security:authorize access="hasRole('ROLE_ADMIN')">
-                            <li><a href="${s:mvcUrl('PC#listar').build() }" rel="nofollow">Lista de Produtos</a></li>
+                            <li><a href="/casadocodigo/produtos" rel="nofollow">Lista de Produtos</a></li>
                             <li><a href="${s:mvcUrl('PC#form').build() }" rel="nofollow">Cadastro de Produtos</a></li>
                         </security:authorize>
-						<li><a href="${s:mvcUrl('CCC#itens').build()}" rel="nofollow">Meu Carrinho (${carrinhoCompras.quantidade })</a></li>
+						<li><a href="/casadocodigo/carrinho" rel="nofollow">Meu Carrinho (${carrinhoCompras.quantidade })</a></li>
 						<li><a href="/pages/sobre-a-casa-do-codigo" rel="nofollow">Sobre Nós</a></li>
 					</ul>
 				</nav>
