@@ -4,13 +4,13 @@
 
 	<header id="layout-header">
 		<div class="clearfix container">
-			<a href="/casadocodigo" id="logo"></a>
+			<a href="cdcspringmvc-jutorres.herokuapp.com/" id="logo"></a>
 			<div id="header-content">
 				<nav id="main-nav">
 					<ul class="clearfix">
 						<security:authorize access="hasRole('ROLE_ADMIN')">
                             <li>
-                            		<a href="/casadocodigo/produtos" rel="nofollow">
+                            		<a href="cdcspringmvc-jutorres.herokuapp.com/produtos" rel="nofollow">
                             			Lista de Produtos
                             		</a>
                             	</li>
@@ -21,7 +21,7 @@
                             	</li>
                         </security:authorize>
 						<li>
-							<a href="/casadocodigo/carrinho" rel="nofollow">
+							<a href="cdcspringmvc-jutorres.herokuapp.com/carrinho" rel="nofollow">
 								<s:message code="menu.carrinho" arguments="${carrinhoCompras.quantidade}" />
 							</a>
 						</li>
@@ -49,7 +49,7 @@
 	<nav class="categories-nav">
 		<ul class="container">
 			<li class="category">
-				<a href="http://www.casadocodigo.com.br">
+				<a href="http://cdcspringmvc-jutorres.herokuapp.com/">
 					<fmt:message key="navegacao.categoria.home"/>
 				</a>
 			</li>
