@@ -4,7 +4,9 @@
 
 	<header id="layout-header">
 		<div class="clearfix container">
-			<a href="${s:mvcUrl('HC#index').build() }" id="logo"></a>
+			<a href="${s:mvcUrl('HC#index').build() }" id="logo">
+				<img src="/resources/imagens/casa-do-codigo.png" alt="Casa do Codigo">
+			</a>
 			<div id="header-content">
 				<nav id="main-nav">
 					<ul class="clearfix">

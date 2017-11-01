@@ -28,7 +28,7 @@
 <link href="${contextPath}resources/css/book-collection.css" rel="stylesheet" type="text/css" media="all" />
 <link href="${contextPath}resources/css-bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
 <link href="${contextPath}resources/css-bootstrap/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="all" />
-<title>${produto.titulo } - Casa do Código</title>
+<title>${produto.titulo } Casa do Código</title>
 </head>
 <body class="${bodyClass}">
 
